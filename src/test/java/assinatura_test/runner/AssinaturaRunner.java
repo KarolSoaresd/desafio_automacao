@@ -5,6 +5,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(publish = true, features = "src/test/resources/features/assinaturas.feature", glue = "assinatura_test.runner")
+@CucumberOptions(publish = true, features = "src/test/resources/features/assinaturas.feature", glue = "assinatura_test.steps_defs")
 public class AssinaturaRunner {
 }

@@ -1,4 +1,4 @@
-package assinatura_test.runner;
+package assinatura_test.steps_defs;
 
 import assinatura_test.web.*;
 import io.cucumber.java.pt.Dado;
