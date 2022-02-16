@@ -20,7 +20,10 @@ public class MeuPerfilPage extends PageObject {
     }
 
     public boolean mensagemDeNaoAssinante(){
-        return this.browser.getPageSource().contains("O Estadão não entra em contato por telefone para renovar assinatura. A renovação é automática e os avisos são enviados previamente por e-mail;");
+        String pageSource = this.browser.getPageSource();
+        return pageSource.contains
+                ("O Estadão não entra em contato por telefone para renovar assinatura. A renovação é automática e os avisos são enviados previamente por e-mail;")
+        || pageSource.contains("Você ainda não é assinante.");
     }
 
     public boolean naoAssinanteMeuPerfil(){

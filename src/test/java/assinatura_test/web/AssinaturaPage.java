@@ -23,7 +23,6 @@ public class AssinaturaPage extends PageObject{
             JavascriptExecutor executor = (JavascriptExecutor) browser;
             executor.executeScript("arguments[0].click();", browser.findElement(By.id("openLandingPage")));
         }
-//        browser.findElement(By.xpath("//*[@id=\"app-root\"]/div/main/section[1]/div[2]/div[1]/div[1]/div[4]/button")).click();
         return new PagamentoPage(browser);
     }
 

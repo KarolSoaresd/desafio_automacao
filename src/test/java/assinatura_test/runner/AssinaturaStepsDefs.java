@@ -22,7 +22,7 @@ public class AssinaturaStepsDefs {
         this.paginaDeAssinatura = new AssinaturaPage();
     }
 
-    @Quando("Estou em uma material da home principal")
+    @Quando("Estou em uma matéria da home principal")
     public void seleciono_uma_matéria_na_home_principal() {
         this.paginaDeAssinatura.navegaNaPagina();
     }
